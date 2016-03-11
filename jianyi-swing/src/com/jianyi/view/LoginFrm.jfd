@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "5.2.2.2.228" Java: "1.8.0_51" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.jianyi.view.resources"
+	"i18n.bundleName": "message"
+	"i18n.keyPrefix": "LoginFrm2"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {comp separator1:::p:390:p, space :0:0:x}, comp separator2::l::401:x, seq l {space :p:208:p, comp login_btn:::::x, space :p:28:p, comp reset_btn:::p::p, space :p:57:p}, seq t {space ::85:x, comp login_title:::p:241:p, space :p:75:p}, seq l {space :p:37:p, par l {comp lab_username::l:p::p, comp lab_password::l:p::p}, space s:::p, par l:::p {comp usernametxt:::::x, comp passwordpwd:::p:261:p}, space ::27:x}}"
+			"$verticalGroup": "par l {seq {space :p:20:p, comp login_title:::p::p, space u:::p, comp separator1:::p::p, space :p:33:p, par b {comp lab_username::b:p::p, comp usernametxt::b:p::p}, space :p:47:p, par b {comp lab_password::b:p::p, comp passwordpwd::b:p::p}, space ::32:x, comp separator2:::p::p, space :p:4:p, par b {comp login_btn::b:p::p, comp reset_btn::b:p::p}, space :p::p}}"
+		} ) {
+			name: "this"
+			"resizable": false
+			"alwaysOnTop": true
+			"$locationPolicy": 1
+			"$sizePolicy": 0
+			"title": "人体机能检测评估系统"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lab_username"
+				"text": new FormMessage( null, "LoginFrm2.lab_username.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lab_password"
+				"text": new FormMessage( null, "LoginFrm2.lab_password.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernametxt"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordpwd"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "login_title"
+				"text": new FormMessage( null, "LoginFrm2.login_title.text" )
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"font": new java.awt.Font( "方正姚体", 1, 22 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "login_btn"
+				"text": new FormMessage( null, "LoginFrm2.login_btn.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "login_btnActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reset_btn"
+				"text": new FormMessage( null, "LoginFrm2.reset_btn.text" )
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator2"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 285, 15 )
+			"size": new java.awt.Dimension( 395, 305 )
+		} )
+	}
+}

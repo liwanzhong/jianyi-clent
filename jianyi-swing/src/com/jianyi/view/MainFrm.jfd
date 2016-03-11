@@ -1,0 +1,279 @@
+JFDML JFormDesigner: "5.2.2.2.228" Java: "1.8.0_51" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.jianyi.view.resources"
+	"i18n.bundleName": "message"
+	"i18n.keyPrefix": "MainFrm"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+			"$columnCount": 1
+			"$rowCount": 3
+			"hGap": 0
+			"vGap": 0
+			"margin": new java.awt.Insets( 2, 2, 2, 2 )
+		} ) {
+			name: "this"
+			"$locationPolicy": 1
+			"$sizePolicy": 0
+			"alwaysOnTop": true
+			"defaultCloseOperation": 3
+			"title": "人体机能检测评估系统"
+			"minimumSize": new java.awt.Dimension( 12, 28 )
+			"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 5
+				"$rowCount": 1
+				"hGap": 0
+				"vGap": 0
+				"sameSizeHorizontally": true
+				"sameSizeVertically": true
+				"margin": new java.awt.Insets( 2, 2, 2, 2 )
+			} ) {
+				name: "panel1"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"autoscrolls": true
+				"background": new java.awt.Color( 0, 204, 204, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "custom_jiance_btn"
+					"text": new FormMessage( null, "MainFrm.custom_jiance_btn.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "custom_jiance_btnActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "system_config_btn"
+					"text": new FormMessage( null, "MainFrm.system_config_btn.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "system_config_btnActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "normal_ques_btn"
+					"text": new FormMessage( null, "MainFrm.normal_ques_btn.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "normal_ques_btnActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+					"fill": 3
+				} )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"fill": 3
+				"useParentLayout": true
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "card_layout"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+					"$columnCount": 1
+					"$rowCount": 4
+					"hGap": 0
+					"vGap": 0
+				} ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 2
+						"$rowCount": 1
+						"hGap": 0
+						"vGap": 0
+					} ) {
+						name: "panel3"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+							"$columnCount": 2
+							"$rowCount": 2
+							"sameSizeHorizontally": true
+							"sameSizeVertically": true
+						} ) {
+							name: "panel4"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label1"
+								"text": new FormMessage( null, "MainFrm.label1.text_2" )
+								"horizontalAlignment": 4
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"fill": 3
+								"anchor": 4
+								"indent": 1
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "custom_name_txt"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"fill": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": new FormMessage( null, "MainFrm.label2.text" )
+								"horizontalTextPosition": 4
+								"horizontalAlignment": 4
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 1
+								"fill": 3
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "custom_phone_txt"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 1
+								"fill": 1
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"fill": 3
+							"anchor": 4
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+							"$columnCount": 2
+							"$rowCount": 1
+							"hGap": 0
+							"vGap": 0
+						} ) {
+							name: "panel5"
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "query_btn"
+								"text": new FormMessage( null, "MainFrm.query_btn.text" )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "query_btnActionPerformed", true ) )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "query_btnActionPerformed", true ) )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "query_btnActionPerformed", true ) )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "query_btnActionPerformed", true ) )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 1
+								"$rowCount": 1
+								"hGap": 0
+								"vGap": 0
+							} ) {
+								name: "panel6"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "teast_btn"
+									"text": new FormMessage( null, "MainFrm.teast_btn.text" )
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "teast_btnActionPerformed", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"fill": 3
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 1
+							"fill": 1
+							"anchor": 8
+						} )
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"fill": 3
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "custom_list_tb"
+							"autoCreateRowSorter": true
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "id" )
+								add( "姓名" )
+								add( "性别" )
+								add( "年龄" )
+								add( "身高(cm)" )
+								add( "体重(kg)" )
+							}, new java.util.Vector {
+								add( null )
+								add( class java.lang.String )
+								add( class java.lang.String )
+								add( class java.lang.Integer )
+								add( class java.lang.Integer )
+								add( class java.lang.Double )
+							}, new java.util.Vector {
+								add( null )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "男", "女" ], 0, 0, 0, true ) )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"showVerticalLines": false
+						} )
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"row": 2
+						"fill": 3
+						"useParentLayout": true
+						"minimumSize": new java.awt.Dimension( 0, 0 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card1"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default"
+					"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+				} ) {
+					name: "panel8"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "MainFrm.label3.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 11
+						"gridY": 5
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 13
+						"gridY": 5
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": new FormMessage( null, "MainFrm.label4.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 11
+						"gridY": 9
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField2"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 13
+						"gridY": 9
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": new FormMessage( null, "MainFrm.label5.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 11
+						"gridY": 13
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField3"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 13
+						"gridY": 13
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": new FormMessage( null, "MainFrm.label6.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 11
+						"gridY": 17
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 13
+						"gridY": 17
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card2"
+				} )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 2
+				"fill": 3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 25 )
+			"size": new java.awt.Dimension( 600, 450 )
+		} )
+	}
+}

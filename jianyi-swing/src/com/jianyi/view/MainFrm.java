@@ -191,10 +191,6 @@ public class MainFrm extends JFrame {
         }
 
 
-
-        //
-
-        // TODO add your code here
     }
 
     private void custom_jiance_btnActionPerformed(ActionEvent e) {

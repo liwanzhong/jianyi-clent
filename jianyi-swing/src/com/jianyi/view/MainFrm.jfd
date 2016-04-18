@@ -16,11 +16,11 @@ new FormModel {
 		} ) {
 			name: "this"
 			"$locationPolicy": 1
-			"$sizePolicy": 0
+			"$sizePolicy": 2
 			"alwaysOnTop": true
 			"defaultCloseOperation": 3
 			"title": "人体机能检测评估系统"
-			"minimumSize": new java.awt.Dimension( 12, 28 )
+			"minimumSize": new java.awt.Dimension( 1024, 960 )
 			"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
 				"$columnCount": 5

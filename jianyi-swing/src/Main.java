@@ -1,4 +1,5 @@
 import com.jianyi.view.LoginFrm;
+import com.jianyi.view.TestFrm;
 
 import javax.swing.*;
 import java.awt.*;

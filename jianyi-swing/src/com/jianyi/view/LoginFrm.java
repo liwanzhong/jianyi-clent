@@ -148,7 +148,7 @@ public class LoginFrm extends JFrame {
         //---- login_title ----
         login_title.setText(bundle.getString("LoginFrm2.login_title.text"));
         login_title.setBackground(new Color(0, 102, 102));
-        login_title.setFont(new Font("\u65b9\u6b63\u59da\u4f53", Font.BOLD, 22));
+//        login_title.setFont(new Font("\u65b9\u6b63\u59da\u4f53", Font.BOLD, 22));
 
         //---- login_btn ----
         login_btn.setText(bundle.getString("LoginFrm2.login_btn.text"));

@@ -368,9 +368,6 @@ public class MainFrm extends JFrame {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 query_btnActionPerformed(e);
-                                query_btnActionPerformed(e);
-                                query_btnActionPerformed(e);
-                                query_btnActionPerformed(e);
                             }
                         });
                         panel5.add(query_btn, new GridConstraints(0, 0, 1, 1,

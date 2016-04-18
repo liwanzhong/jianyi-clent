@@ -13,6 +13,7 @@ import java.util.*;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.table.*;
+import javax.swing.text.html.ImageView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -207,7 +208,7 @@ public class MainFrm extends JFrame {
     }
 
     private void normal_ques_btnActionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(this,"常见问题按钮");
+        JOptionPane.showMessageDialog(this,"功能开发中！");
     }
 
     private void initComponents() {
@@ -260,7 +261,15 @@ public class MainFrm extends JFrame {
             panel1.setLayout(new GridLayoutManager(1, 5, new Insets(2, 2, 2, 2), 0, 0, true, true));
 
             //---- custom_jiance_btn ----
-            custom_jiance_btn.setText(bundle.getString("MainFrm.custom_jiance_btn.text"));
+            custom_jiance_btn.setIcon(new ImageIcon(ImageView.class.getResource("/images/examine.png")));
+            custom_jiance_btn.setHorizontalTextPosition(SwingConstants.CENTER);
+            custom_jiance_btn.setVerticalTextPosition(SwingConstants.BOTTOM);
+            custom_jiance_btn.setRolloverIcon(new ImageIcon(ImageView.class.getResource("/images/examine-active.png")));
+            custom_jiance_btn.setBorderPainted(false);
+            custom_jiance_btn.setFocusPainted(false);
+            custom_jiance_btn.setContentAreaFilled(false);
+            custom_jiance_btn.setFocusable(true);
+            custom_jiance_btn.setMargin(new Insets(0, 0, 0, 0));
             custom_jiance_btn.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -274,7 +283,16 @@ public class MainFrm extends JFrame {
                     null, null, null));
 
             //---- system_config_btn ----
-            system_config_btn.setText(bundle.getString("MainFrm.system_config_btn.text"));
+//            system_config_btn.setText(bundle.getString("MainFrm.system_config_btn.text"));
+            system_config_btn.setIcon(new ImageIcon(ImageView.class.getResource("/images/setting.png")));
+            system_config_btn.setHorizontalTextPosition(SwingConstants.CENTER);
+            system_config_btn.setVerticalTextPosition(SwingConstants.BOTTOM);
+            system_config_btn.setRolloverIcon(new ImageIcon(ImageView.class.getResource("/images/setting-active.png")));
+            system_config_btn.setBorderPainted(false);
+            system_config_btn.setFocusPainted(false);
+            system_config_btn.setContentAreaFilled(false);
+            system_config_btn.setFocusable(true);
+            system_config_btn.setMargin(new Insets(0, 0, 0, 0));
             system_config_btn.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -288,7 +306,15 @@ public class MainFrm extends JFrame {
                     null, null, null));
 
             //---- normal_ques_btn ----
-            normal_ques_btn.setText(bundle.getString("MainFrm.normal_ques_btn.text"));
+            normal_ques_btn.setIcon(new ImageIcon(ImageView.class.getResource("/images/question.png")));
+            normal_ques_btn.setHorizontalTextPosition(SwingConstants.CENTER);
+            normal_ques_btn.setVerticalTextPosition(SwingConstants.BOTTOM);
+            normal_ques_btn.setRolloverIcon(new ImageIcon(ImageView.class.getResource("/images/question-active.png")));
+            normal_ques_btn.setBorderPainted(false);
+            normal_ques_btn.setFocusPainted(false);
+            normal_ques_btn.setContentAreaFilled(false);
+            normal_ques_btn.setFocusable(true);
+            normal_ques_btn.setMargin(new Insets(0, 0, 0, 0));
             normal_ques_btn.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

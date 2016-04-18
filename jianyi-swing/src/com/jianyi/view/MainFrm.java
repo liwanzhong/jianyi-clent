@@ -439,7 +439,14 @@ public class MainFrm extends JFrame {
 
                     //---- custom_list_tb ----
                     custom_list_tb.setAutoCreateRowSorter(true);
+                    custom_list_tb.setFont(new Font("微软雅黑", Font.PLAIN, 14));
+                    custom_list_tb.setRowHeight(35);
                     custom_list_tb.setBorder(null);
+
+                    JTableHeader header = custom_list_tb.getTableHeader();          //设置字体
+                    header.setFont(new Font("微软雅黑", Font.PLAIN, 16));
+                    header.setPreferredSize(new Dimension(header.getWidth(), 40));
+
                     custom_list_tb.setModel(new DefaultTableModel(
                             new Object[][] {
                             },

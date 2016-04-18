@@ -36,6 +36,7 @@ import javax.swing.GroupLayout;
  */
 public class LoginFrm extends JFrame {
     public LoginFrm() {
+        super("Minimal-Frame-Application");
         initComponents();
     }
 

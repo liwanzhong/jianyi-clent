@@ -52,7 +52,7 @@ public class Main {
 //        SmartLookAndFeel.setCurrentTheme(props);
         // select the Look and Feel
         try {
-            UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+            UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

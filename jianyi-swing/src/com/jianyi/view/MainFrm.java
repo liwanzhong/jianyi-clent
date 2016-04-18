@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.List;
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicButtonUI;
 import javax.swing.table.*;
 import javax.swing.text.html.ImageView;
 
@@ -353,11 +354,13 @@ public class MainFrm extends JFrame {
                                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
                                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
                                 null, null, null, 1));
+
                         panel4.add(custom_name_txt, new GridConstraints(0, 1, 1, 1,
                                 GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
                                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
                                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
                                 null, null, null));
+
 
                         //---- label2 ----
                         label2.setText(bundle.getString("MainFrm.label2.text"));
@@ -386,6 +389,10 @@ public class MainFrm extends JFrame {
 
                         //---- query_btn ----
                         query_btn.setText(bundle.getString("MainFrm.query_btn.text"));
+
+                        query_btn.setPreferredSize(new Dimension(80, 40));// 设置按钮大小
+                        query_btn.setFont(new Font("粗体", Font.PLAIN, 22));// 按钮文本样式
+                        query_btn.setMargin(new Insets(0, 0, 0, 0));// 按钮内容与边框距离
                         query_btn.addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
@@ -404,6 +411,9 @@ public class MainFrm extends JFrame {
 
                             //---- teast_btn ----
                             teast_btn.setText(bundle.getString("MainFrm.teast_btn.text"));
+                            teast_btn.setPreferredSize(new Dimension(80, 40));// 设置按钮大小
+                            teast_btn.setFont(new Font("粗体", Font.PLAIN, 22));// 按钮文本样式
+                            teast_btn.setMargin(new Insets(0, 0, 0, 0));// 按钮内容与边框距离
                             teast_btn.addActionListener(new ActionListener() {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
@@ -441,7 +451,7 @@ public class MainFrm extends JFrame {
                     custom_list_tb.setAutoCreateRowSorter(true);
                     custom_list_tb.setFont(new Font("微软雅黑", Font.PLAIN, 14));
                     custom_list_tb.setRowHeight(35);
-                    custom_list_tb.setBorder(null);
+//                    custom_list_tb.setBorder(null);
 
                     JTableHeader header = custom_list_tb.getTableHeader();          //设置字体
                     header.setFont(new Font("微软雅黑", Font.PLAIN, 16));

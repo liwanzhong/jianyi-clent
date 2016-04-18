@@ -251,19 +251,6 @@ new FormModel {
 						"gridX": 13
 						"gridY": 13
 					} )
-					add( new FormComponent( "javax.swing.JLabel" ) {
-						name: "label6"
-						"text": new FormMessage( null, "MainFrm.label6.text" )
-					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
-						"gridX": 11
-						"gridY": 17
-					} )
-					add( new FormComponent( "javax.swing.JComboBox" ) {
-						name: "comboBox1"
-					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
-						"gridX": 13
-						"gridY": 17
-					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
 					"value": "card2"
 				} )

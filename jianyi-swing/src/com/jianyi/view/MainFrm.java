@@ -519,10 +519,7 @@ public class MainFrm extends JFrame {
                 panel8.add(label5, CC.xy(11, 13));
                 panel8.add(textField3, CC.xy(13, 13));
 
-                //---- label6 ----
-                label6.setText(bundle.getString("MainFrm.label6.text"));
-                panel8.add(label6, CC.xy(11, 17));
-                panel8.add(comboBox1, CC.xy(13, 17));
+
             }
             card_layout.add(panel8, "card2");
         }

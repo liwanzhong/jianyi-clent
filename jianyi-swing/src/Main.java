@@ -1,6 +1,5 @@
 import com.jianyi.view.LoginFrm;
 import com.jianyi.view.TestFrm;
-import com.jtattoo.plaf.smart.SmartLookAndFeel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -64,5 +63,7 @@ public class Main {
         }
         LoginFrm loginFrm = new LoginFrm();
         loginFrm.setVisible(true);
-    }
+        /*TestFrm frm = new TestFrm();
+        frm.setVisible(true);*/
+    }/**/
 }

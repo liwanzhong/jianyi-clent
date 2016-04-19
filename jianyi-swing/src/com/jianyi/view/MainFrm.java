@@ -9,6 +9,8 @@ import java.awt.event.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
 import javax.swing.*;
@@ -22,6 +24,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.intellij.uiDesigner.core.*;
 import com.jgoodies.forms.factories.*;
 import com.jgoodies.forms.layout.*;
+import com.jianyi.utils.AgeCal;
 import com.jianyi.utils.ClientConfigLoader;
 import com.jianyi.utils.httpclient.FinalHttpClient;
 import com.jianyi.utils.sign.MapWithStringConvert;
@@ -135,6 +138,7 @@ public class MainFrm extends JFrame {
         }
         if(retobj != null){
             if(retobj.get("status").equals(1)){
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 //todo 查询出来结果以后绑定到表格中展示
                 DefaultTableModel tableModel = (DefaultTableModel) custom_list_tb.getModel();
                 tableModel.setRowCount(0);
@@ -145,11 +149,17 @@ public class MainFrm extends JFrame {
                     rowdata.add(customItem.get("id"));
                     rowdata.add(customItem.get("name"));
                     rowdata.add(StringUtils.equalsIgnoreCase(customItem.get("sex").toString(),"1")?"男":"女");
-                    rowdata.add("22");
+                    try {
+                        rowdata.add(AgeCal.getAge(dateFormat.parse(customItem.get("birthday").toString())));
+                    } catch (ParseException e1) {
+                        e1.printStackTrace();
+                    }
                     rowdata.add(customItem.get("body_height"));
                     rowdata.add(customItem.get("weight"));
                     tableModel.addRow(rowdata);
                 }
+
+                hideColumn(custom_list_tb,0);
 
 
             }else{
